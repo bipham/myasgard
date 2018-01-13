@@ -4,7 +4,7 @@ export default [
     // Product Routes
     {
         path: '/product/products',
-        name: 'admin.product.products.index',
+        name: 'admin.product.product.index',
         component: ProductManager,
     }
 ];

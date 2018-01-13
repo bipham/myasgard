@@ -2,35 +2,25 @@
 
 namespace Modules\Product\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
-use Illuminate\Routing\Controller;
+use Modules\Core\Http\Controllers\Admin\AdminBaseController;
 use Modules\Product\Repositories\ProductRepository;
 
-class ProductController extends Controller
+class ProductController extends AdminBaseController
 {
     /**
-     * @var ProductRepository
+     * @var PageRepository
      */
     private $product;
 
-    public function __construct(ProductRepository $product){
+    public function __construct(ProductRepository $product)
+    {
+        parent::__construct();
+
         $this->product = $product;
     }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return request
-     */
-
-    public function index(Request $request)
+    public function index()
     {
-        if ($request->ajax()) {
-            return $this->product->all();
-        }
-        else {
-            return 'dasdsd';
-        }
+        return view('product::product.index');
     }
-
 }

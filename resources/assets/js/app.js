@@ -4,6 +4,7 @@ import 'babel-polyfill';
 import Vue from 'vue';
  import VueI18n from 'vue-i18n';
 import VueRouter from 'vue-router';
+import 'b-components';
 import ElementUI from 'element-ui';
 import VueEvents from 'vue-events';
 import locale from 'element-ui/lib/locale/lang/en';
@@ -12,8 +13,8 @@ import locale from 'element-ui/lib/locale/lang/en';
  import MediaRoutes from '../../../Modules/Media/Assets/js/MediaRoutes';
  import UserRoutes from '../../../Modules/User/Assets/js/UserRoutes';
  import ProductRouter from '../../../Modules/Product/Assets/js/ProductRouter';
-import 'b-components'
 
+ // Vue.use(Bcomponent);
 Vue.use(ElementUI, { locale });
  Vue.use(VueI18n);
 Vue.use(VueRouter);

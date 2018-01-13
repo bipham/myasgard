@@ -6,7 +6,7 @@ use Illuminate\Routing\Router;
 $router->group(['prefix' =>'/product'], function (Router $router) {
 // append
     $router->get('products', [
-        'as' => 'admin.product.products.index',
+        'as' => 'admin.product.product.index',
         'uses' => 'ProductController@index',
     ]);
 });

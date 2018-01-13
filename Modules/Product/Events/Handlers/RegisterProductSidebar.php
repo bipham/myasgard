@@ -40,7 +40,7 @@ class RegisterProductSidebar implements \Maatwebsite\Sidebar\SidebarExtender
             $group->item(trans('Product'), function (Item $item) {
                 $item->icon('fa fa-file');
                 $item->weight(10);
-                $item->route('admin.product.products.index');
+                $item->route('admin.product.product.index');
             });
         });
         return $menu;

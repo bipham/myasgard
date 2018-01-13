@@ -42,6 +42,7 @@ class Product extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reading_question_learnings');
+        Schema::dropIfExists('categories');
+        Schema::dropIfExists('products');
     }
 }
